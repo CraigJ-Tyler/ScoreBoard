@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="http://fonts.cdnfonts.com/css/cursed-timer-ulil">
+
+</head>
+
+<body>
+    <div class="rectangle">
+        <div class="container">
+            <div>
+                <h3 id="teamOne">HOME</h3>
+                <div id="home_score" class="home_scorebox">0</div>
+                <button id="add_homepoints" onclick="homeAdd1()">+1</button>
+                <button id="add_homepoints" onclick="homeAdd2()">+2</button>
+                <button id="add_homepoints" onclick="homeAdd3()">+3</button>
+            </div>
+            <button id="start-over" onclick="newGame()">New Game</button>
+            <div>
+                <h3 id="teamTwo">AWAY</h3>
+                <div id="away_score" class="away_scorebox">0</div>
+                <button id="add_awaypoints" onclick="awayAdd1()">+1</button>
+                <button id="add_awaypoints" onclick="awayAdd2()">+2</button>
+                <button id="add_awaypoints" onclick="awayAdd3()">+3</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
